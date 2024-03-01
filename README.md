@@ -5,6 +5,6 @@ This repo contains the configuration to setup my machines. This is using [Chezmo
 ## How to run
 
 ```shell
-export GITHUB_USERNAME=logandonley
+export GITHUB_USERNAME=rimaout
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
 ```
