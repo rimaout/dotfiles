@@ -1,0 +1,24 @@
+theme = tokyonight-storm
+
+# Font
+font-family = Cascadia Code PL
+bold-is-bright = true
+font-size = 15
+
+# Window
+title = 👻
+window-padding-x = 14
+window-padding-y = 14
+window-save-state = always
+window-theme = ghostty
+
+# Cursor
+mouse-hide-while-typing = true
+cursor-invert-fg-bg = true
+
+
+# MacOs
+macos-option-as-alt = true
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+auto-update = download
