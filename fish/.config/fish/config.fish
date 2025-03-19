@@ -22,7 +22,7 @@ alias rm="rm -i" # interactive mode
 alias gst="git status"
 alias gu="gitui"
 alias ls="eza --icons"
-alias lsa="eza --icons --all"
+alias la="eza --icons --all"
 alias ll="eza --long --git --icons --header"
 alias lla="eza --long --git --icons --header --all"
 
