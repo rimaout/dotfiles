@@ -15,9 +15,11 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "lua_ls",  -- lua language server
-                    "pyright", -- python language server
-                    "jdtls",   -- java language server
+                    "lua_ls",           -- lua language server
+                    "pyright",          -- python language server
+                    "clangd",           -- c/c++ language server
+                    "rust_analyzer",    -- rust language server
+                    "html",             -- html language server
                 },
             })
         end,
@@ -52,6 +54,9 @@ return {
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({ capabilities = capabilities })
             lspconfig.pyright.setup({ capabilities = capabilities })
+            lspconfig.clangd.setup({ capabilities = capabilities })
+            lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+            lspconfig.html.setup({ capabilities = capabilities })
 
             -- Key Bindings
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})

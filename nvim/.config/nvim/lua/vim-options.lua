@@ -25,11 +25,3 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true -- enable 24-bit RGB color in the terminal
 vim.opt.wrap = false  -- disable line wrapping
 vim.opt.scrolloff = 8 -- keep 8 lines above and below the cursor
-
--- General key mapping 
-vim.g.mapleader = " "                      -- set space key as the mapleader
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
-
-
-
