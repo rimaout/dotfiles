@@ -3,18 +3,17 @@ theme = tokyonight-storm
 # Font
 font-family = Cascadia Code PL
 bold-is-bright = true
-font-size = 15
+font-size = 16
 
 # Window
-window-padding-x = 14
-window-padding-y = 14
+window-padding-x = 12
+window-padding-y = 12
 window-save-state = always
 window-theme = ghostty
 
 # Cursor
 mouse-hide-while-typing = true
 cursor-invert-fg-bg = true
-
 
 # MacOs
 macos-option-as-alt = false
