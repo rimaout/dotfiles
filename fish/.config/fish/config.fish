@@ -9,16 +9,13 @@ starship init fish | source # Starship init
 zoxide init fish | source   # zoxide init
 
 ## Neofetch at login
-neofetch 
+fastfetch 
 
 ## Aliases
 alias cd="z"     # zoxide
-alias c="clear"
+alias cl="clear"
 alias nv="nvim"
 alias ..="cd .."
-alias cp="cp -i" # interactive mode
-alias mv="mv -i" # interactive mode
-alias rm="rm -i" # interactive mode
 alias gst="git status"
 alias gu="gitui"
 alias ls="eza --icons"
