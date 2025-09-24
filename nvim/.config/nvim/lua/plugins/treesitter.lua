@@ -1,14 +1,24 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
 
-    config = function()
-        local config = require("nvim-treesitter.configs")
-        config.setup({
-            auto_install = true, -- automatically install syntax highlighters
-            ensure_installed = { "vim", "lua", "python", "rust", "java", "c", "cpp", "json", "yaml", "toml", "html", "css", "javascript", "typescript", "markdown" },
-            highlight = { enable = true },
-            indent = { enable = true }
-        })
-    end
+	config = function()
+		local config = require("nvim-treesitter.configs")
+		config.setup({
+			auto_install = true,
+			highlight = { enable = true },
+			indent = { enable = true },
+
+            -- incremental_selection (press <Enter> to select a node, <Backspace> to unselect)
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<Enter>",
+                    node_incremental = "<Enter>",
+					scope_incremental = false,  -- set to `false` to disable one of the mappings 
+					node_decremental = "<Backspace>",
+				},
+			},
+		})
+	end,
 }
