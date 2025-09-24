@@ -8,20 +8,10 @@ set -g fish_greeting # empty (remove the default greeting)
 starship init fish | source # Starship init
 zoxide init fish | source   # zoxide init
 
-## Neofetch at login
-fastfetch 
-
 ## Aliases
 alias cd="z"     # zoxide
-alias cl="clear"
-alias nv="nvim"
 alias ..="cd .."
-alias gst="git status"
-alias gu="gitui"
 alias ls="eza --icons"
-alias la="eza --icons --all"
-alias ll="eza --long --git --icons --header"
-alias lla="eza --long --git --icons --header --all"
 
 end
 
@@ -37,4 +27,3 @@ else
     end
 end
 # <<< conda initialize <<<
-
