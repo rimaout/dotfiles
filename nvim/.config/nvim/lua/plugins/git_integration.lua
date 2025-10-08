@@ -4,9 +4,10 @@ return {
     -- left line color change + change preview
     {
         "lewis6991/gitsigns.nvim",
-
+        lazy = false,  -- This forces immediate loading
         keys = {
-            { "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "to-dooooooooo" } },
+            { "<leader>gh", ":Gitsigns preview_hunk<CR>", { desc = "[G]it preview [H]unk" } },
+            { "<leader>gb", ":Gitsigns blame<CR>", { desc = "[G]it show [B]lame" } },
         },
     },
 

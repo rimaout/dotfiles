@@ -82,8 +82,8 @@ return {
         keys = {
             { "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]action" } },
             { "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[N]ame word under cursor across files" } },
-            { "grr", require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' } },      -- Find references for the word under your cursor.
-            { "grd", require('telescope.builtin').lsp_definitions, { desc = '[G]oto [D]efinition' } },      --  This is where a variable was first declared, or where a function is defined, etc. oss: To jump back, press <C-t>.
+            { "grr", function() require('telescope.builtin').lsp_references() end, { desc = '[G]oto [R]eferences' } },      -- Find references for the word under your cursor.
+            { "grd", function() require('telescope.builtin').lsp_definitions() end, { desc = '[G]oto [D]efinition' } },      --  This is where a variable was first declared, or where a function is defined, etc. oss: To jump back, press <C-t>.
         },
 
         config = function()
