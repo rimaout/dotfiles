@@ -62,8 +62,12 @@ return {
       },
     }
   end)(),
+
   config = function(_, opts)
     local telescope = require("telescope")
+    local builtin = require("telescope.builtin")
+    local themes = require("telescope.themes")
+
     telescope.setup(opts or {})
     telescope.load_extension("ui-select")
   end,

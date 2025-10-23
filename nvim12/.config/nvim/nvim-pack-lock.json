@@ -1,0 +1,19 @@
+{
+  "plugins": {
+    "LuaSnip": {
+      "rev": "ccf25a5",
+      "src": "https://github.com/L3MON4D3/LuaSnip"
+    },
+    "blink.cmp": [],
+    "gitsigns.nvim": [],
+    "lualine.nvim": [],
+    "mason-lspconfig.nvim": [],
+    "mason-tool-installer.nvim": [],
+    "mason.nvim": [],
+    "nvim-lspconfig": [],
+    "nvim-treesitter": [],
+    "oil.nvim": [],
+    "tokyonight.nvim": [],
+    "vim-fugitive": []
+  }
+}
