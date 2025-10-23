@@ -80,7 +80,8 @@
 >- `d$` can be use to deleat until the enf of the line
 >- or you can use visual mode to delect and then deleat
 
-- `u` undo modifications next chart to the right
+- `u` undo modification
+- `contol + R` redo modification
 
 **Other:**
 

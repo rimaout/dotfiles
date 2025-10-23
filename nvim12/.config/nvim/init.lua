@@ -1,0 +1,12 @@
+require('options')
+require('keymaps')
+require('functions')
+
+require('plugins.tokyonight')
+require('plugins.treesitter')
+require('plugins.lualine')
+require('plugins.oil')
+require('plugins.git_integration')
+require('plugins.lsp')
+require('plugins.completions')
+require('plugins.telescope')
