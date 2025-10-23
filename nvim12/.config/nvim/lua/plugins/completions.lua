@@ -31,25 +31,3 @@ require("blink.cmp").setup({
         }
     }
 })
-
------ KEYMAPS -----
-
-vim.keymap.set('n', '<leader>fr', vim.lsp.buf.format, { desc = "[F]o[R]mat the Code in the current file" })
-{ "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]action" } },
-{ "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[N]ame word under cursor across files" } },
-{ "grr", require('telescope.builtin').lsp_references, { desc = '[G]oto [R]eferences' } },      -- Find references for the word under your cursor.
-{ "grd", require('telescope.builtin').lsp_definitions, { desc = '[G]oto [D]efinition' } },      --  This is where a variable was first declared, or where a function is defined, etc. oss: To jump back, press <C-t>.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
